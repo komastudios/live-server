@@ -342,9 +342,9 @@ LiveServer.start = function(options) {
 	});
 
 	var ignored = [
-		function(testPath) { // Always ignore dotfiles (important e.g. because editor hidden temp files)
-			return testPath !== "." && /(^[.#]|(?:__|~)$)/.test(path.basename(testPath));
-		}
+		// function(testPath) { // Always ignore dotfiles (important e.g. because editor hidden temp files)
+		// 	return testPath !== "." && /(^[.#]|(?:__|~)$)/.test(path.basename(testPath));
+		// }
 	];
 	if (options.ignore) {
 		ignored = ignored.concat(options.ignore);
