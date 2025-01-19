@@ -89,7 +89,7 @@ function staticServer(root) {
 			}
 		}
 
-		send(req, reqpath, { root: root })
+		send(req, reqpath, { root: root, dotfiles: 'allow' })
 			.on('error', error)
 			.on('directory', directory)
 			.on('file', file)
